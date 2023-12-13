@@ -62,5 +62,46 @@ a {
 
 body header {
   height: 136px;
+  width: 100%;
   background-color: #967979;
+}
+body header img {
+  width: 100px;
+}
+body header .search_bar {
+  position: relative;
+}
+body header .search_bar input {
+  position: absolute;
+  width: 600px;
+  height: 40px;
+  text-indent: 48px;
+  background-color: #faf9f8;
+}
+body header .search_bar input::-moz-placeholder {
+  color: #b6a1a1;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 250% */
+}
+body header .search_bar input::placeholder {
+  color: #b6a1a1;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 250% */
+}
+body header .search_bar i {
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  font-size: 32px;
+  color: #967979;
+}
+body header .icons {
+  margin-left: 1000px;
+  color: #000;
 }/*# sourceMappingURL=global.css.map */

@@ -1,18 +1,42 @@
-    body {
-        header {
-            height: 136px;
-            background-color:  #967979;
-            img {
-                width: 100px;
-            }
-            .search_bar {
-                width: 600px;
-                height: 40px;
-                flex-shrink: 0;
-                .search-sm {
+body {
+  header {
+    height: 136px;
+    width: 100%;
+    background-color: $Primary-10;
 
-            }
-            }
-            
-        }
+    img {
+      width: 100px;
     }
+    .search_bar {
+      position: relative;
+      input {
+        position: absolute;
+        width: 600px;
+        height: 40px;
+        text-indent: 48px;
+        background-color: $Secondary_1;
+      }
+      input::placeholder {
+        color: $Primary-7;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 40px; /* 250% */
+      }
+      i {
+        position: absolute;
+        left: 4px;
+        top: 4px;
+        font-size: 32px;
+        color: $Primary-10;
+      }
+
+    }
+    .icons {
+      margin-left: 1000px;
+      color: #000;
+
+    }
+  }
+}
