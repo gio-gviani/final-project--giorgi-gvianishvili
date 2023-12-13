@@ -2,19 +2,87 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -24,8 +92,17 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -33,16 +110,20 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: "";
   content: none;
 }
@@ -60,25 +141,38 @@ a {
   box-sizing: border-box;
 }
 
-body header {
+body .container_1 {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+}
+body header .header_top {
   height: 136px;
   width: 100%;
   background-color: #967979;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
 }
-body header img {
-  width: 100px;
+body header .header_top img {
+  width: 165px;
 }
-body header .search_bar {
+body header .header_top .search_bar {
   position: relative;
+  width: 600px;
+  height: 40px;
 }
-body header .search_bar input {
+body header .header_top .search_bar input {
   position: absolute;
   width: 600px;
   height: 40px;
+  border-radius: 8px;
+  border: none;
   text-indent: 48px;
   background-color: #faf9f8;
 }
-body header .search_bar input::-moz-placeholder {
+body header .header_top .search_bar input::-moz-placeholder {
   color: #b6a1a1;
   font-family: Inter;
   font-size: 16px;
@@ -86,7 +180,7 @@ body header .search_bar input::-moz-placeholder {
   font-weight: 400;
   line-height: 40px; /* 250% */
 }
-body header .search_bar input::placeholder {
+body header .header_top .search_bar input::placeholder {
   color: #b6a1a1;
   font-family: Inter;
   font-size: 16px;
@@ -94,14 +188,51 @@ body header .search_bar input::placeholder {
   font-weight: 400;
   line-height: 40px; /* 250% */
 }
-body header .search_bar i {
+body header .header_top .search_bar i {
   position: absolute;
   left: 4px;
   top: 4px;
   font-size: 32px;
   color: #967979;
 }
-body header .icons {
-  margin-left: 1000px;
-  color: #000;
+body header .header_top .icons {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  color: #faf9f8;
+  font-size: 40px;
+}
+body header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 144px;
+  width: 100%;
+  height: 72px;
+  background-color: #a18686;
+}
+body header nav ul a {
+  color: #faf9f8;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 120% */
+}
+body footer {
+  margin-top: 200px;
+  width: 100%;
+}
+body footer .footer_top {
+  margin-top: 100px;
+  background-color: #a18686;
+}
+body footer .footer_top .go_top {
+  margin: 0 auto;
+  width: -moz-max-content;
+  width: max-content;
+}
+body footer .footer_top .go_top svg {
+  margin: 0 auto;
 }/*# sourceMappingURL=global.css.map */
