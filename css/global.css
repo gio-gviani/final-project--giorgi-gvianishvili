@@ -148,6 +148,9 @@ body .container_1 {
   padding: 0 40px;
   margin: 0 auto;
 }
+body html {
+  scroll-behavior: smooth;
+}
 body header .header_top {
   background-color: #967979;
 }
@@ -182,6 +185,7 @@ body header .header_top .header_top_content .search_bar button {
   border: none;
   border-radius: 8px;
   vertical-align: middle;
+  cursor: pointer;
 }
 body header .header_top .header_top_content .search_bar button i {
   font-size: 32px;
@@ -192,6 +196,7 @@ body header .header_top .header_top_content .search_bar input {
   vertical-align: middle;
   width: 88%;
   height: 30px;
+  outline: none;
 }
 @media (max-width: 900px) {
   body header .header_top .header_top_content .search_bar input {
@@ -388,6 +393,11 @@ body footer .footer_bottom .footer_bottom_content .social_media {
 body footer .footer_bottom .footer_bottom_content .social_media i {
   margin-right: 15px;
   color: #faf9f8;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+body footer .footer_bottom .footer_bottom_content .social_media i:hover {
+  color: #cbbcbc;
 }
 @media (max-width: 600px) {
   body footer .footer_top {

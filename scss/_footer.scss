@@ -1,93 +1,95 @@
 footer {
-  margin-top: 30px;
+    margin-top: 30px;
 
-  background-color: $Primary-10;
-  .footer_top {
-    background-color: $Primary-9;
-    .footer_top_content {
-      width: 100%;
-      display: flex;
-      height: 71px;
-
-      .go_top {
-        margin: auto auto;
-
-        a {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          color: $Secondary_1; /*TODO: aq ra feri gamoviyeno figmashi weria #fffff xolo ideashi praimerebi da secpnderebi unda gamoviyeno  */
-          font-family: Inter;
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 700;
-          line-height: 16px; /* 100% */
-        }
-      }
-    }
-  }
-  .footer_bottom {
-    .footer_bottom_content {
-      padding-right: 50px;
-      padding-bottom: 48px;
-      display: flex;
-      justify-content: space-between;
-
-      .logo_and_title {
-        display: inline-block;
-        width: 170px;
-        img {
-          width: 165px;
-          margin-top: 32px;
-        }
-        h4 {
-          color: $Secondary_1;
-          font-family: Inter;
-          font-size: 24px;
-          font-style: normal;
-          font-weight: 300;
-          line-height: 40px; /* 166.667% */
-        }
-      }
-
-      .links {
-        margin: auto 0;
-        max-width: 200px;
-        a {
-          color: $Secondary_1;
-          font-family: Inter;
-          font-size: 24px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 48px; /* 200% */
-        }
-      }
-
-      .social_media {
-        font-size: 40px;
-        align-self: flex-end;
-        @media (max-width: 600px) {
-
-          align-self: center;
-        }
-        i {
-          margin-right: 15px;
-          color: $Secondary_1;
-        }
-      }
-    }
-  }
-  @media (max-width: 600px) {
+    background-color: $Primary-10;
     .footer_top {
-      display: none;
+        background-color: $Primary-9;
+        .footer_top_content {
+            width: 100%;
+            display: flex;
+            height: 71px;
+
+            .go_top {
+                margin: auto auto;
+
+                a {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    color: $Secondary_1; /*TODO: aq ra feri gamoviyeno figmashi weria #fffff xolo ideashi praimerebi da secpnderebi unda gamoviyeno  */
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 16px; /* 100% */
+                }
+            }
+        }
     }
-    .footer_bottom_content {
-      flex-direction: column;
-      align-items: center;
-      .links {
-        margin-bottom: 44px;
-      }
-      
+    .footer_bottom {
+        .footer_bottom_content {
+            padding-right: 50px;
+            padding-bottom: 48px;
+            display: flex;
+            justify-content: space-between;
+
+            .logo_and_title {
+                display: inline-block;
+                width: 170px;
+                img {
+                    width: 165px;
+                    margin-top: 32px;
+                }
+                h4 {
+                    color: $Secondary_1;
+                    font-family: Inter;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 40px; /* 166.667% */
+                }
+            }
+
+            .links {
+                margin: auto 0;
+                max-width: 200px;
+                a {
+                    color: $Secondary_1;
+                    font-family: Inter;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 48px; /* 200% */
+                }
+            }
+
+            .social_media {
+                font-size: 40px;
+                align-self: flex-end;
+                @media (max-width: 600px) {
+                    align-self: center;
+                }
+                i {
+                    margin-right: 15px;
+                    color: $Secondary_1;
+                    transition: 0.3s;
+                    &:hover {
+                        color: $Primary-5;
+                    }
+                }
+            }
+        }
     }
-  }
+    @media (max-width: 600px) {
+        .footer_top {
+            display: none;
+        }
+        .footer_bottom_content {
+            flex-direction: column;
+            align-items: center;
+            .links {
+                margin-bottom: 44px;
+            }
+        }
+    }
 }
