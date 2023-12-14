@@ -1,6 +1,6 @@
 footer {
   margin-top: 30px;
-  height: 424px;
+
   background-color: $Primary-10;
   .footer_top {
     background-color: $Primary-9;
@@ -28,11 +28,11 @@ footer {
   }
   .footer_bottom {
     .footer_bottom_content {
-      height: 352px;
       padding-right: 50px;
       padding-bottom: 48px;
       display: flex;
       justify-content: space-between;
+
       .logo_and_title {
         display: inline-block;
         width: 170px;
@@ -66,11 +66,28 @@ footer {
       .social_media {
         font-size: 40px;
         align-self: flex-end;
+        @media (max-width: 600px) {
+
+          align-self: center;
+        }
         i {
           margin-right: 15px;
           color: $Secondary_1;
         }
       }
+    }
+  }
+  @media (max-width: 600px) {
+    .footer_top {
+      display: none;
+    }
+    .footer_bottom_content {
+      flex-direction: column;
+      align-items: center;
+      .links {
+        margin-bottom: 44px;
+      }
+      
     }
   }
 }
