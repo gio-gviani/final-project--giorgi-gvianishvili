@@ -1,14 +1,13 @@
 footer {
+  margin-top: 30px;
   height: 424px;
   background-color: $Primary-10;
   .footer_top {
     background-color: $Primary-9;
     .footer_top_content {
-      margin-top: 200px;
       width: 100%;
       display: flex;
-      margin-top: 100px;
-      height: 72px;
+      height: 71px;
 
       .go_top {
         margin: auto auto;
@@ -30,6 +29,8 @@ footer {
   .footer_bottom {
     .footer_bottom_content {
       height: 352px;
+      padding-right: 50px;
+      padding-bottom: 48px;
       display: flex;
       justify-content: space-between;
       .logo_and_title {
@@ -51,14 +52,23 @@ footer {
 
       .links {
         margin: auto 0;
+        max-width: 200px;
+        a {
+          color: $Secondary_1;
+          font-family: Inter;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 48px; /* 200% */
+        }
       }
 
       .social_media {
-        margin: 48px;
         font-size: 40px;
         align-self: flex-end;
         i {
           margin-right: 15px;
+          color: $Secondary_1;
         }
       }
     }
