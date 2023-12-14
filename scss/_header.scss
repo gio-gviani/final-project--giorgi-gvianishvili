@@ -1,52 +1,54 @@
 header {
   .header_top {
-    height: 136px;
-    width: 100%;
     background-color: $Primary-10;
+    .header_top_content {
+      height: 136px;
+      width: 100%;
 
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    img {
-      width: 165px;
-    }
+      display: flex;
+      justify-content:space-between;
+      align-items: center;
+      width: 100%;
+      img {
+        width: 165px;
+      }
 
-    .search_bar {
-      position: relative;
-      width: 600px;
-      height: 40px;
-      input {
-        position: absolute;
+      .search_bar {
+        position: relative;
         width: 600px;
         height: 40px;
-        border-radius: 8px;
-        border: none;
-        text-indent: 48px;
-        background-color: $Secondary_1;
+        input {
+          position: absolute;
+          width: 600px;
+          height: 40px;
+          border-radius: 8px;
+          border: none;
+          text-indent: 48px;
+          background-color: $Secondary_1;
+        }
+        input::placeholder {
+          color: $Primary-7;
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 40px; /* 250% */
+        }
+        i {
+          position: absolute;
+          left: 4px;
+          top: 4px;
+          font-size: 32px;
+          color: $Primary-10;
+        }
       }
-      input::placeholder {
-        color: $Primary-7;
-        font-family: Inter;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 40px; /* 250% */
+      .icons {
+        display: flex;
+        align-items: flex-start;
+        gap: 16px;
+        color: $Secondary_1;
+        font-size: 40px;
       }
-      i {
-        position: absolute;
-        left: 4px;
-        top: 4px;
-        font-size: 32px;
-        color: $Primary-10;
-      }
-    }
-    .icons {
-      display: flex;
-      align-items: flex-start;
-      gap: 16px;
-      color: $Secondary_1;
-      font-size: 40px;
     }
   }
   nav ul {
