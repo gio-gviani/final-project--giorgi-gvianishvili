@@ -1,6 +1,4 @@
-html {
-    scroll-behavior: smooth;
-}
+
 
 header {
     .header_top {
@@ -34,7 +32,7 @@ header {
                     cursor: pointer;
                     i {
                         font-size: 32px;
-                        color: $Primary-10;
+                        color: $Secondary_10;
                     }
                 }
 
@@ -48,7 +46,7 @@ header {
                     @media (max-width: 900px) {
                         width: 81.5%;
                     }
-                    @media (max-width: 700px) {
+                    @media (max-width: 742px) {
                         width: 70%;
                     }
                 }
@@ -75,7 +73,7 @@ header {
                 color: $Secondary_1;
             }
 
-            @media (max-width: 600px) {
+            @media (max-width: 742px) {
                 img {
                     display: none;
                 }
