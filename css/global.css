@@ -181,6 +181,11 @@ html body header .header_top .header_top_content .search_bar {
   border: none;
   background-color: #faf9f8;
 }
+@media (max-width: 742px) {
+  html body header .header_top .header_top_content .search_bar {
+    margin-left: 0px;
+  }
+}
 html body header .header_top .header_top_content .search_bar button {
   border: none;
   border-radius: 8px;
@@ -248,6 +253,23 @@ html body header .header_top .header_top_content .search_bar input::placeholder 
   font-weight: 400;
   line-height: 40px; /* 250% */
 }
+@media (max-width: 426px) {
+  html body header .header_top .header_top_content .search_bar input::-webkit-input-placeholder {
+    letter-spacing: -1px;
+  }
+  html body header .header_top .header_top_content .search_bar input::-moz-placeholder {
+    letter-spacing: -1px;
+  }
+  html body header .header_top .header_top_content .search_bar input:-ms-input-placeholder {
+    letter-spacing: -1px;
+  }
+  html body header .header_top .header_top_content .search_bar input::-ms-input-placeholder {
+    letter-spacing: -1px;
+  }
+  html body header .header_top .header_top_content .search_bar input::placeholder {
+    letter-spacing: -1px;
+  }
+}
 html body header .header_top .header_top_content .icons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -265,6 +287,9 @@ html body header .header_top .header_top_content .fa-bars {
   color: #faf9f8;
 }
 @media (max-width: 742px) {
+  html body header .header_top .header_top_content .search_bar {
+    margin-left: 0px;
+  }
   html body header .header_top .header_top_content img {
     display: none;
   }
@@ -273,6 +298,26 @@ html body header .header_top .header_top_content .fa-bars {
   }
   html body header .header_top .header_top_content .fa-bars {
     display: block;
+  }
+}
+@media (max-width: 372px) {
+  html body header .header_top .header_top_content .search_bar input {
+    width: 50%;
+  }
+  html body header .header_top .header_top_content .search_bar input::-webkit-input-placeholder {
+    font-size: 0px;
+  }
+  html body header .header_top .header_top_content .search_bar input::-moz-placeholder {
+    font-size: 0px;
+  }
+  html body header .header_top .header_top_content .search_bar input:-ms-input-placeholder {
+    font-size: 0px;
+  }
+  html body header .header_top .header_top_content .search_bar input::-ms-input-placeholder {
+    font-size: 0px;
+  }
+  html body header .header_top .header_top_content .search_bar input::placeholder {
+    font-size: 0px;
   }
 }
 @media (max-width: 600px) {
