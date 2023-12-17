@@ -9,6 +9,151 @@ html {
     }
     @import "header";
 
+    .s-1 {
+      height: 640px;
+      background-image: url("../img/Steam logo and background of games_cleanup.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      .mySlides {
+        position: relative;
+
+        .slide_piece1 {
+          display: inline-block;
+          margin-top: 34px;
+          h2 {
+            color: $Gray_2;
+            text-align: center;
+            font-family: Esteban;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 48px; /* 120% */
+            margin-bottom: 40px;
+          }
+          .game1 {
+            position: relative;
+            max-width: 100%;
+            .price {
+              position: absolute;
+              bottom: 10px;
+
+              display: inline-flex;
+              padding: 0px 11px;
+              justify-content: center;
+              align-items: center;
+              gap: 4px;
+              border-radius: 12px;
+              border: none;
+              background-color: $Primary-10;
+              p {
+                color: $Gray_1;
+                margin-bottom: 0;
+                font-family: Esteban;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 56px; /* 175% */
+              }
+            }
+            img {
+              margin-left: 70px;
+              border-radius: 10px;
+            }
+          }
+        }
+        .slide_piece2 {
+          display: inline-block;
+          position: absolute;
+          margin: 0 29px;
+          bottom: 0px;
+          .shop_now {
+            border: none;
+            display: inline-flex;
+            padding: 12px 16px;
+            justify-content: center;
+            align-items: center;
+            gap: 4px;
+            border-radius: 12px;
+            background: $Secondary_10;
+            p {
+              margin: 0;
+
+              color: $Gray_1;
+              font-family: Inter;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 24px; /* 150% */
+            }
+          }
+          .shop_now:hover {
+            background: $Secondary_7;
+          }
+          .shop_now:active {
+            background: $Secondary_5;
+          }
+          .shop_now:focus {
+            outline: none;
+          }
+
+          .dots {
+            width: max-content;
+            margin: 0 auto;
+            margin-top: 40px;
+            .dot {
+              opacity: 0.5;
+              cursor: pointer;
+              height: 15px;
+              width: 15px;
+              margin: 0 2px;
+              background-color: #bbb;
+              border-radius: 50%;
+              display: inline-block;
+              transition: background-color 0.6s ease;
+            }
+            .active {
+              opacity: 1;
+            }
+          }
+        }
+        .slide_piece3 {
+          display: inline-block;
+          margin-left: 250px;
+          .game2 {
+            position: relative;
+            top: 10px;
+
+            .price {
+              position: absolute;
+              top: 10px;
+              margin-left: -30px;
+
+              display: inline-flex;
+              padding: 0px 11px;
+              justify-content: center;
+              align-items: center;
+              gap: 4px;
+              border-radius: 12px;
+              border: none;
+              background-color: $Primary-10;
+              p {
+                color: $Gray_1;
+                margin-bottom: 0;
+                font-family: Esteban;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 56px; /* 175% */
+              }
+            }
+            img {
+              border-radius: 10px;
+            }
+          }
+        }
+      }
+    }
+
     @import "footer";
   }
 }

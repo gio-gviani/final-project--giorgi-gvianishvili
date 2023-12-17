@@ -339,6 +339,7 @@ html body header nav ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 0px;
   width: 100%;
   height: 72px;
   background-color: #a18686;
@@ -350,6 +351,165 @@ html body header nav ul a {
   font-style: normal;
   font-weight: 500;
   line-height: 24px; /* 120% */
+}
+html body .s-1 {
+  height: 640px;
+  background-image: url("../img/Steam logo and background of games_cleanup.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+html body .s-1 .mySlides {
+  position: relative;
+}
+html body .s-1 .mySlides .slide_piece1 {
+  display: inline-block;
+  margin-top: 34px;
+}
+html body .s-1 .mySlides .slide_piece1 h2 {
+  color: #D2D4DA;
+  text-align: center;
+  font-family: Esteban;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px; /* 120% */
+  margin-bottom: 40px;
+}
+html body .s-1 .mySlides .slide_piece1 .game1 {
+  position: relative;
+  max-width: 100%;
+}
+html body .s-1 .mySlides .slide_piece1 .game1 .price {
+  position: absolute;
+  bottom: 10px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0px 11px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4px;
+  border-radius: 12px;
+  border: none;
+  background-color: #967979;
+}
+html body .s-1 .mySlides .slide_piece1 .game1 .price p {
+  color: #F3F4F8;
+  margin-bottom: 0;
+  font-family: Esteban;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 56px; /* 175% */
+}
+html body .s-1 .mySlides .slide_piece1 .game1 img {
+  margin-left: 70px;
+  border-radius: 10px;
+}
+html body .s-1 .mySlides .slide_piece2 {
+  display: inline-block;
+  position: absolute;
+  margin: 0 29px;
+  bottom: 0px;
+}
+html body .s-1 .mySlides .slide_piece2 .shop_now {
+  border: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 12px 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4px;
+  border-radius: 12px;
+  background: #C9C0B7;
+}
+html body .s-1 .mySlides .slide_piece2 .shop_now p {
+  margin: 0;
+  color: #F3F4F8;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+}
+html body .s-1 .mySlides .slide_piece2 .shop_now:hover {
+  background: #D9D3CD;
+}
+html body .s-1 .mySlides .slide_piece2 .shop_now:active {
+  background: #E4E0DB;
+}
+html body .s-1 .mySlides .slide_piece2 .shop_now:focus {
+  outline: none;
+}
+html body .s-1 .mySlides .slide_piece2 .dots {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+html body .s-1 .mySlides .slide_piece2 .dots .dot {
+  opacity: 0.5;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+html body .s-1 .mySlides .slide_piece2 .dots .active {
+  opacity: 1;
+}
+html body .s-1 .mySlides .slide_piece3 {
+  display: inline-block;
+  margin-left: 250px;
+}
+html body .s-1 .mySlides .slide_piece3 .game2 {
+  position: relative;
+  top: 10px;
+}
+html body .s-1 .mySlides .slide_piece3 .game2 .price {
+  position: absolute;
+  top: 10px;
+  margin-left: -30px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0px 11px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4px;
+  border-radius: 12px;
+  border: none;
+  background-color: #967979;
+}
+html body .s-1 .mySlides .slide_piece3 .game2 .price p {
+  color: #F3F4F8;
+  margin-bottom: 0;
+  font-family: Esteban;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 56px; /* 175% */
+}
+html body .s-1 .mySlides .slide_piece3 .game2 img {
+  border-radius: 10px;
 }
 html body footer {
   margin-top: 30px;
