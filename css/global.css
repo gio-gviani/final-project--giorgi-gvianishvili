@@ -357,13 +357,22 @@ html body .s-1 {
   background-image: url("../img/Steam logo and background of games_cleanup.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 html body .s-1 .mySlides {
-  position: relative;
-}
-html body .s-1 .mySlides .slide_piece1 {
-  display: inline-block;
-  margin-top: 34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 html body .s-1 .mySlides .slide_piece1 h2 {
   color: #D2D4DA;
@@ -375,13 +384,23 @@ html body .s-1 .mySlides .slide_piece1 h2 {
   line-height: 48px; /* 120% */
   margin-bottom: 40px;
 }
+@media (max-width: 1130px) {
+  html body .s-1 .mySlides .slide_piece1 h2 {
+    font-size: 30px;
+  }
+}
 html body .s-1 .mySlides .slide_piece1 .game1 {
   position: relative;
-  max-width: 100%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  outline: none;
 }
 html body .s-1 .mySlides .slide_piece1 .game1 .price {
   position: absolute;
   bottom: 10px;
+  outline: none;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -410,10 +429,15 @@ html body .s-1 .mySlides .slide_piece1 .game1 img {
   margin-left: 70px;
   border-radius: 10px;
 }
+@media (max-width: 1130px) {
+  html body .s-1 .mySlides .slide_piece1 .game1 img {
+    width: 300px;
+  }
+}
 html body .s-1 .mySlides .slide_piece2 {
-  display: inline-block;
-  position: absolute;
-  margin: 0 29px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: 0 auto;
   bottom: 0px;
 }
 html body .s-1 .mySlides .slide_piece2 .shop_now {
@@ -440,6 +464,11 @@ html body .s-1 .mySlides .slide_piece2 .shop_now p {
   font-style: normal;
   font-weight: 500;
   line-height: 24px; /* 150% */
+}
+@media (max-width: 1130px) {
+  html body .s-1 .mySlides .slide_piece2 .shop_now p {
+    font-size: 14px;
+  }
 }
 html body .s-1 .mySlides .slide_piece2 .shop_now:hover {
   background: #D9D3CD;
@@ -473,14 +502,13 @@ html body .s-1 .mySlides .slide_piece2 .dots .active {
   opacity: 1;
 }
 html body .s-1 .mySlides .slide_piece3 {
-  display: inline-block;
-  margin-left: 250px;
+  margin-right: 60px;
 }
 html body .s-1 .mySlides .slide_piece3 .game2 {
   position: relative;
-  top: 10px;
 }
 html body .s-1 .mySlides .slide_piece3 .game2 .price {
+  outline: none;
   position: absolute;
   top: 10px;
   margin-left: -30px;
@@ -510,9 +538,49 @@ html body .s-1 .mySlides .slide_piece3 .game2 .price p {
 }
 html body .s-1 .mySlides .slide_piece3 .game2 img {
   border-radius: 10px;
+  margin-bottom: 30px;
+}
+@media (max-width: 1130px) {
+  html body .s-1 .mySlides .slide_piece3 .game2 img {
+    width: 300px;
+  }
+}
+@media (max-width: 1000px) {
+  html body .s-1 .mySlides {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  html body .s-1 .mySlides .slide_piece1 {
+    margin-top: 20px;
+  }
+  html body .s-1 .mySlides .slide_piece2 {
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin-bottom: 20px;
+  }
+  html body .s-1 .mySlides .slide_piece2 .dots {
+    margin-top: 20px;
+  }
+  html body .s-1 .mySlides .slide_piece3 {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  html body .s-1 .mySlides .slide_piece1 .game1 img {
+    width: 200px;
+    margin-left: 30px;
+  }
+  html body .s-1 .mySlides .slide_piece1 .game1 .price p {
+    font-size: 20px;
+  }
 }
 html body footer {
-  margin-top: 30px;
   background-color: #967979;
 }
 html body footer .footer_top {
@@ -526,7 +594,7 @@ html body footer .footer_top .footer_top_content {
   height: 71px;
 }
 html body footer .footer_top .footer_top_content .go_top {
-  margin: auto auto;
+  margin: auto;
 }
 html body footer .footer_top .footer_top_content .go_top a {
   display: -webkit-box;

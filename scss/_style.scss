@@ -14,12 +14,15 @@ html {
       background-image: url("../img/Steam logo and background of games_cleanup.jpg");
       background-repeat: no-repeat;
       background-size: cover;
+      display: flex;
+      align-items: center;
+
       .mySlides {
-        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
 
         .slide_piece1 {
-          display: inline-block;
-          margin-top: 34px;
           h2 {
             color: $Gray_2;
             text-align: center;
@@ -29,14 +32,19 @@ html {
             font-weight: 400;
             line-height: 48px; /* 120% */
             margin-bottom: 40px;
+            @media (max-width: 1130px) {
+              font-size: 30px;
+            }
           }
           .game1 {
             position: relative;
-            max-width: 100%;
+            width: max-content;
+            margin: 0 auto;
+            outline: none;
             .price {
               position: absolute;
               bottom: 10px;
-
+              outline: none;
               display: inline-flex;
               padding: 0px 11px;
               justify-content: center;
@@ -58,13 +66,16 @@ html {
             img {
               margin-left: 70px;
               border-radius: 10px;
+              @media (max-width: 1130px) {
+                width: 300px;
+              }
             }
           }
         }
         .slide_piece2 {
-          display: inline-block;
-          position: absolute;
-          margin: 0 29px;
+          align-self: flex-end;
+
+          margin: 0 auto;
           bottom: 0px;
           .shop_now {
             border: none;
@@ -84,6 +95,9 @@ html {
               font-style: normal;
               font-weight: 500;
               line-height: 24px; /* 150% */
+              @media (max-width: 1130px) {
+                font-size: 14px;
+              }
             }
           }
           .shop_now:hover {
@@ -117,13 +131,13 @@ html {
           }
         }
         .slide_piece3 {
-          display: inline-block;
-          margin-left: 250px;
+          margin-right: 60px;
           .game2 {
             position: relative;
-            top: 10px;
+            // margin-top: 34px;
 
             .price {
+              outline: none;
               position: absolute;
               top: 10px;
               margin-left: -30px;
@@ -148,6 +162,45 @@ html {
             }
             img {
               border-radius: 10px;
+              margin-bottom: 30px;
+              @media (max-width: 1130px) {
+                width: 300px;
+              }
+            }
+          }
+        }
+        @media (max-width: 1000px) {
+          justify-content: space-evenly;
+          flex-direction: column;
+
+          gap: 30px;
+          .slide_piece1 {
+            margin-top: 20px;
+          }
+          .slide_piece2 {
+            align-self: center;
+            margin-bottom: 20px;
+            .dots {
+              margin-top: 20px;
+            }
+          }
+          .slide_piece3 {
+            display: none;
+          }
+        }
+        @media (max-width: 400px) {
+          .slide_piece1 {
+            .game1 {
+
+              img {
+                width: 200px;
+                margin-left: 30px;
+              }
+              .price {
+                p {
+                  font-size: 20px;
+                }
+              }
             }
           }
         }
