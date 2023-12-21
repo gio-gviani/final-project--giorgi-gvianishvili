@@ -635,7 +635,12 @@ html body .s-2 .categ_head h3 {
   font-weight: 500;
   line-height: 40px; /* 111.111% */
 }
-html body .s-2 .categ_head #see_more_less {
+@media (max-width: 695px) {
+  html body .s-2 .categ_head h3 {
+    font-size: 20px;
+  }
+}
+html body .s-2 .categ_head .see_more_less {
   cursor: pointer;
   color: #a18686;
   font-family: Inter;
@@ -647,6 +652,11 @@ html body .s-2 .categ_head #see_more_less {
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
+@media (max-width: 695px) {
+  html body .s-2 .categ_head .see_more_less {
+    display: none;
+  }
+}
 html body .s-2 .categories {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -654,21 +664,51 @@ html body .s-2 .categories {
   gap: 20px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (max-width: 869px) {
+  html body .s-2 .categories {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 html body .s-2 .categories .categoric {
   border-radius: 8px;
   width: 350px;
   height: 280px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
   background-size: cover;
+  margin-bottom: 21px;
+}
+@media (max-width: 1170px) {
+  html body .s-2 .categories .categoric {
+    width: 300px;
+    height: 240px;
+  }
+}
+@media (max-width: 1019px) {
+  html body .s-2 .categories .categoric {
+    width: 250px;
+    height: 200px;
+  }
+}
+@media (max-width: 695px) {
+  html body .s-2 .categories .categoric {
+    width: 200px;
+    height: 160px;
+  }
+}
+@media (max-width: 495px) {
+  html body .s-2 .categories .categoric {
+    width: 100%;
+  }
 }
 html body .s-2 .categories .categoric h3 {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
   margin: auto;
   display: inline-block;
+  text-align: center;
   color: #faf9f8;
   font-family: Inter;
   font-size: 32px;
@@ -676,10 +716,17 @@ html body .s-2 .categories .categoric h3 {
   font-weight: 500;
   line-height: 40px; /* 125% */
 }
+@media (max-width: 695px) {
+  html body .s-2 .categories .categoric h3 {
+    font-size: 16px;
+  }
+}
 html body .s-2 .categories .categoric .bg-color {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   border-radius: 8px;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
@@ -698,6 +745,7 @@ html body .s-2 .categories .c_3 {
 }
 html body .s-2 .categories .c_4 {
   background-image: url(../img/img_for_categories/4.png);
+  display: block;
 }
 html body .s-2 .categories .c_5 {
   background-image: url(../img/img_for_categories/5.png);
@@ -705,17 +753,32 @@ html body .s-2 .categories .c_5 {
 html body .s-2 .categories .c_6 {
   background-image: url(../img/img_for_categories/6.png);
 }
-html body .s-2 .categories .c_7 {
-  background-image: url(../img/img_for_categories/7.png);
+html body .s-2 .see_more_less_bottom {
+  border-top: 1px solid #C9C0B7;
+  height: 39px;
+  width: 100%;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-html body .s-2 .categories .c_8 {
-  background-image: url(../img/img_for_categories/8.png);
+@media (max-width: 695px) {
+  html body .s-2 .see_more_less_bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
-html body .s-2 .categories .c_9 {
-  background-image: url(../img/img_for_categories/9.png);
-}
-html body .s-2 .categories .c_10 {
-  background-image: url(../img/img_for_categories/10.png);
+html body .s-2 .see_more_less_bottom .see_more_less {
+  color: #a18686;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 133.333% */
 }
 html body footer {
   margin-top: 104px;
@@ -745,7 +808,7 @@ html body footer .footer_top .footer_top_content .go_top a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #faf9f8; /*TODO: aq ra feri gamoviyeno figmashi weria #fffff xolo ideashi praimerebi da secpnderebi unda gamoviyeno  */
+  color: #faf9f8;
   font-family: Inter;
   font-size: 16px;
   font-style: normal;

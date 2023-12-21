@@ -77,38 +77,7 @@ html {
 
           margin: 0 auto;
           bottom: 0px;
-          .shop_now {
-            border: none;
-            display: inline-flex;
-            padding: 12px 16px;
-            justify-content: center;
-            align-items: center;
-            gap: 4px;
-            border-radius: 12px;
-            background: $Secondary_10;
-            p {
-              margin: 0;
-
-              color: $Gray_1;
-              font-family: Inter;
-              font-size: 16px;
-              font-style: normal;
-              font-weight: 500;
-              line-height: 24px; /* 150% */
-              @media (max-width: 1130px) {
-                font-size: 14px;
-              }
-            }
-          }
-          .shop_now:hover {
-            background: $Secondary_7;
-          }
-          .shop_now:active {
-            background: $Secondary_5;
-          }
-          .shop_now:focus {
-            outline: none;
-          }
+          @include button1;
 
           .dots {
             width: max-content;
@@ -253,8 +222,11 @@ html {
           font-style: normal;
           font-weight: 500;
           line-height: 40px; /* 111.111% */
+          @media (max-width: 695px) {
+            font-size: 20px;
+          }
         }
-        #see_more_less {
+        .see_more_less {
           cursor: pointer;
           color: $Primary-9;
           font-family: Inter;
@@ -264,23 +236,48 @@ html {
           line-height: 24px; /* 100% */
           margin: 0;
           align-self: flex-end;
-
+          @media (max-width: 695px) {
+            display: none;
+          }
         }
       }
       .categories {
         display: flex;
         gap: 20px;
         flex-wrap: wrap;
+        justify-content: space-between;
+        @media (max-width: 869px) {
+          justify-content: center;
+        }
         .categoric {
           border-radius: 8px;
           width: 350px;
           height: 280px;
-          flex-shrink: 0;
           background-size: cover;
+          margin-bottom: 21px;
+
+          @media (max-width: 1170px) {
+            width: 300px;
+            height: 240px;
+          }
+          @media (max-width: 1019px) {
+            width: 250px;
+            height: 200px;
+          }
+
+          @media (max-width: 695px) {
+            width: 200px;
+            height: 160px;
+          }
+
+          @media (max-width: 495px) {
+            width: 100%;
+          }
+
           h3 {
-            width: max-content;
             margin: auto;
             display: inline-block;
+            text-align: center;
 
             color: $Secondary_1;
             font-family: Inter;
@@ -288,11 +285,14 @@ html {
             font-style: normal;
             font-weight: 500;
             line-height: 40px; /* 125% */
+            @media (max-width: 695px) {
+              font-size: 16px;
+            }
           }
 
           .bg-color {
             display: flex;
-
+            flex-basis: 100%;
             border-radius: 8px;
             height: 100%;
             background-color: rgba(0, 0, 0, 0.4);
@@ -313,6 +313,7 @@ html {
         }
         .c_4 {
           background-image: url(../img/img_for_categories/4.png);
+          display: block;
         }
         .c_5 {
           background-image: url(../img/img_for_categories/5.png);
@@ -320,19 +321,38 @@ html {
         .c_6 {
           background-image: url(../img/img_for_categories/6.png);
         }
-        .c_7 {
-          background-image: url(../img/img_for_categories/7.png);
-        }
-        .c_8 {
-          background-image: url(../img/img_for_categories/8.png);
-        }
-        .c_9 {
-          background-image: url(../img/img_for_categories/9.png);
-        }
-        .c_10 {
-          background-image: url(../img/img_for_categories/10.png);
-        }
+        // .c_7 {
+        //   background-image: url(../img/img_for_categories/7.png);
+        // }
+        // .c_8 {
+        //   background-image: url(../img/img_for_categories/8.png);
+        // }
+        // .c_9 {
+        //   background-image: url(../img/img_for_categories/9.png);
+        // }
+        // .c_10 {
+        //   background-image: url(../img/img_for_categories/10.png);
+        // }
       }
+      .see_more_less_bottom {
+        border-top: 1px solid $Secondary_10;
+        height: 39px;
+        width: 100%;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        @media (max-width: 695px) {
+          display: flex;
+        }
+        .see_more_less {
+          color: $Primary-9;
+          font-family: Inter;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 16px; /* 133.333% */
+        }
+      }ma
     }
 
     @import "footer";
