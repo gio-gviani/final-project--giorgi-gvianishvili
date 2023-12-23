@@ -356,6 +356,178 @@ html {
         }
       }
     }
+    .s-3 {
+      margin-top: 100px;
+      display: flex;
+      flex-wrap: wrap-reverse;
+      padding: 20px;
+      height: 400px;
+      justify-content: space-around;
+      align-items: center;
+      border-radius: 8px;
+      @media (max-width: 503px) {
+        gap: 10px;
+      }
+
+      background: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.5) 0%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url(../img/s-3/backgraund.jpg), lightgray 50% / cover no-repeat;
+
+      .s_3_main {
+        .info {
+          h2 {
+            color: $Secondary_1;
+            font-family: Inter;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 48px; /* 120% */
+            @media (max-width: 840px) {
+              font-family: Inter;
+              font-size: 17px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 16px; /* 133.333% */
+            }
+          }
+          h3 {
+            color: $Secondary_10;
+            text-decoration: line-through;
+            font-family: Inter;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 48px; /* 150% */
+
+            @media (max-width: 840px) {
+              font-family: Inter;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 16px; /* 100% */
+              text-decoration-line: strikethrough;
+            }
+          }
+        }
+
+        button {
+          margin-top: 50px;
+          @media (max-width: 503px) {
+            margin-top: 20px;
+          }
+        }
+        @include button1;
+      }
+      img {
+        width: 300px;
+        margin-bottom: 20px;
+        @media (max-width: 840px) {
+          width: 250px;
+        }
+        @media (max-width: 350px) {
+          width: 180px;
+        }
+      }
+    }
+    .s-4 {
+      background: $Secondary_5;
+      margin-top: 47px;
+
+      padding-top: 46px;
+      h2 {
+        color: $Gray_10;
+        font-family: Inter;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 40px; /* 111.111% */
+        margin-bottom: 16px;
+      }
+      .now_pop_carousel {
+        display: flex;
+        overflow-x: auto;
+        margin-bottom: 13px;
+        a {
+          text-decoration: none;
+
+          .my_card {
+            margin-bottom: 16px;
+            min-width: 236px;
+            border-radius: 8px;
+            border: 0.5px solid $Gray_10;
+            margin-right: 20px;
+            background: $Secondary_1;
+
+            .card_top {
+              border-radius: 4px 4px 0px 0px;
+              background: #e5e5e5;
+              max-width: 400px;
+
+              position: relative;
+              padding-top: 40px;
+              img {
+                display: block;
+                width: 80%;
+                margin: auto;
+              }
+              i {
+                position: absolute;
+                top: 16px;
+                right: 16px;
+              }
+            }
+            .card_bottom {
+              padding: 32px;
+              padding-bottom: 0px;
+              p {
+                margin-bottom: 16px;
+                color: $Gray_10;
+
+                font-family: Inter;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 32px; /* 160% */
+                @media (max-width: 1106px) {
+                  font-size: 14px;
+                }
+              }
+              .price {
+                margin-bottom: 16px;
+                color: $Gray_10;
+                font-family: Inter;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 32px; /* 100% */
+              }
+              .rate {
+                margin-bottom: 24px;
+                h6 {
+                  color: $Gray_10;
+                  font-family: Inter;
+                  font-size: 20px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 24px; /* 120% */
+                  display: inline-block;
+                }
+                i {
+                  display: inline-block;
+                  color: $Primary-9;
+                }
+                .not_soild {
+                  color: $Primary-4;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
 
     @import "footer";
   }
