@@ -450,16 +450,16 @@ html {
         display: flex;
         overflow-x: auto;
         margin-bottom: 13px;
-        a {
-          text-decoration: none;
 
-          .my_card {
-            margin-bottom: 16px;
-            min-width: 236px;
-            border-radius: 8px;
-            border: 0.5px solid $Gray_10;
-            margin-right: 20px;
-            background: $Secondary_1;
+        .my_card {
+          margin-bottom: 16px;
+          min-width: 236px;
+          border-radius: 8px;
+          border: 0.5px solid $Gray_10;
+          margin-right: 20px;
+          background: $Secondary_1;
+          a {
+            text-decoration: none;
 
             .card_top {
               border-radius: 4px 4px 0px 0px;
@@ -479,49 +479,49 @@ html {
                 right: 16px;
               }
             }
-            .card_bottom {
-              padding: 32px;
-              padding-bottom: 0px;
-              p {
-                margin-bottom: 16px;
-                color: $Gray_10;
+          }
+          .card_bottom {
+            padding: 32px;
+            padding-bottom: 0px;
+            p {
+              margin-bottom: 16px;
+              color: $Gray_10;
 
+              font-family: Inter;
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 32px; /* 160% */
+              @media (max-width: 1106px) {
+                font-size: 14px;
+              }
+            }
+            .price {
+              margin-bottom: 16px;
+              color: $Gray_10;
+              font-family: Inter;
+              font-size: 32px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 32px; /* 100% */
+            }
+            .rate {
+              margin-bottom: 24px;
+              h6 {
+                color: $Gray_10;
                 font-family: Inter;
                 font-size: 20px;
                 font-style: normal;
                 font-weight: 400;
-                line-height: 32px; /* 160% */
-                @media (max-width: 1106px) {
-                  font-size: 14px;
-                }
+                line-height: 24px; /* 120% */
+                display: inline-block;
               }
-              .price {
-                margin-bottom: 16px;
-                color: $Gray_10;
-                font-family: Inter;
-                font-size: 32px;
-                font-style: normal;
-                font-weight: 600;
-                line-height: 32px; /* 100% */
+              i {
+                display: inline-block;
+                color: $Primary-9;
               }
-              .rate {
-                margin-bottom: 24px;
-                h6 {
-                  color: $Gray_10;
-                  font-family: Inter;
-                  font-size: 20px;
-                  font-style: normal;
-                  font-weight: 400;
-                  line-height: 24px; /* 120% */
-                  display: inline-block;
-                }
-                i {
-                  display: inline-block;
-                  color: $Primary-9;
-                }
-                .not_soild {
-                  color: $Primary-4;
-                }
+              .not_soild {
+                color: $Primary-4;
               }
             }
           }

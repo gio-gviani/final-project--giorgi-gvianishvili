@@ -922,10 +922,7 @@ html body .s-4 .now_pop_carousel {
   overflow-x: auto;
   margin-bottom: 13px;
 }
-html body .s-4 .now_pop_carousel a {
-  text-decoration: none;
-}
-html body .s-4 .now_pop_carousel a .my_card {
+html body .s-4 .now_pop_carousel .my_card {
   margin-bottom: 16px;
   min-width: 236px;
   border-radius: 8px;
@@ -933,28 +930,31 @@ html body .s-4 .now_pop_carousel a .my_card {
   margin-right: 20px;
   background: #faf9f8;
 }
-html body .s-4 .now_pop_carousel a .my_card .card_top {
+html body .s-4 .now_pop_carousel .my_card a {
+  text-decoration: none;
+}
+html body .s-4 .now_pop_carousel .my_card a .card_top {
   border-radius: 4px 4px 0px 0px;
   background: #e5e5e5;
   max-width: 400px;
   position: relative;
   padding-top: 40px;
 }
-html body .s-4 .now_pop_carousel a .my_card .card_top img {
+html body .s-4 .now_pop_carousel .my_card a .card_top img {
   display: block;
   width: 80%;
   margin: auto;
 }
-html body .s-4 .now_pop_carousel a .my_card .card_top i {
+html body .s-4 .now_pop_carousel .my_card a .card_top i {
   position: absolute;
   top: 16px;
   right: 16px;
 }
-html body .s-4 .now_pop_carousel a .my_card .card_bottom {
+html body .s-4 .now_pop_carousel .my_card .card_bottom {
   padding: 32px;
   padding-bottom: 0px;
 }
-html body .s-4 .now_pop_carousel a .my_card .card_bottom p {
+html body .s-4 .now_pop_carousel .my_card .card_bottom p {
   margin-bottom: 16px;
   color: #0e1020;
   font-family: Inter;
@@ -964,11 +964,11 @@ html body .s-4 .now_pop_carousel a .my_card .card_bottom p {
   line-height: 32px; /* 160% */
 }
 @media (max-width: 1106px) {
-  html body .s-4 .now_pop_carousel a .my_card .card_bottom p {
+  html body .s-4 .now_pop_carousel .my_card .card_bottom p {
     font-size: 14px;
   }
 }
-html body .s-4 .now_pop_carousel a .my_card .card_bottom .price {
+html body .s-4 .now_pop_carousel .my_card .card_bottom .price {
   margin-bottom: 16px;
   color: #0e1020;
   font-family: Inter;
@@ -977,10 +977,10 @@ html body .s-4 .now_pop_carousel a .my_card .card_bottom .price {
   font-weight: 600;
   line-height: 32px; /* 100% */
 }
-html body .s-4 .now_pop_carousel a .my_card .card_bottom .rate {
+html body .s-4 .now_pop_carousel .my_card .card_bottom .rate {
   margin-bottom: 24px;
 }
-html body .s-4 .now_pop_carousel a .my_card .card_bottom .rate h6 {
+html body .s-4 .now_pop_carousel .my_card .card_bottom .rate h6 {
   color: #0e1020;
   font-family: Inter;
   font-size: 20px;
@@ -989,11 +989,11 @@ html body .s-4 .now_pop_carousel a .my_card .card_bottom .rate h6 {
   line-height: 24px; /* 120% */
   display: inline-block;
 }
-html body .s-4 .now_pop_carousel a .my_card .card_bottom .rate i {
+html body .s-4 .now_pop_carousel .my_card .card_bottom .rate i {
   display: inline-block;
   color: #a18686;
 }
-html body .s-4 .now_pop_carousel a .my_card .card_bottom .rate .not_soild {
+html body .s-4 .now_pop_carousel .my_card .card_bottom .rate .not_soild {
   color: #d5c9c9;
 }
 html body footer {
