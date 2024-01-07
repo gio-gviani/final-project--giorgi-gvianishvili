@@ -146,7 +146,7 @@ html {
   scroll-behavior: smooth;
 }
 html body .container_1 {
-  max-width: 1240px;
+  max-width: 1540px;
   width: 100%;
   padding: 0 40px;
   margin: 0 auto;
@@ -994,6 +994,259 @@ html body .s-4 .now_pop_carousel .my_card .card_bottom .rate i {
   color: #a18686;
 }
 html body .s-4 .now_pop_carousel .my_card .card_bottom .rate .not_soild {
+  color: #d5c9c9;
+}
+html body .cat_s-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 48px;
+}
+html body .cat_s-1 .filter {
+  padding-left: 42px;
+  padding-top: 24px;
+  margin-right: 20px;
+  border-radius: 8px;
+  border: 1px solid #cbbcbc;
+  min-width: 400px;
+}
+html body .cat_s-1 .filter .filter_categories {
+  margin-bottom: 56px;
+}
+html body .cat_s-1 .filter .filter_categories h3 {
+  color: #0e1020;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px; /* 125% */
+}
+html body .cat_s-1 .filter .filter_categories ul li {
+  margin-bottom: 16px;
+}
+html body .cat_s-1 .filter .filter_categories ul li .custom-checkbox {
+  margin-right: 24px;
+  margin-right: 24px;
+  width: 24px;
+  height: 24px;
+  margin-bottom: 0;
+  vertical-align: middle;
+  cursor: pointer;
+}
+html body .cat_s-1 .filter .filter_categories ul li .custom-checkbox .checkmark {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  border-radius: 2px;
+  background-color: #c0afaf;
+}
+html body .cat_s-1 .filter .filter_categories ul li .custom-checkbox input:checked + .checkmark {
+  background: url(../img/categories_page/checked.svg);
+}
+html body .cat_s-1 .filter .filter_categories ul li .custom-checkbox input {
+  display: none;
+}
+html body .cat_s-1 .filter .filter_categories ul li h6 {
+  display: inline-block;
+  vertical-align: middle;
+  color: #0e1020;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 166.667% */
+  margin-bottom: 0;
+}
+html body .cat_s-1 .filter .coustomer_reviews {
+  margin-bottom: 56px;
+}
+html body .cat_s-1 .filter .coustomer_reviews h3 {
+  color: #0e1020;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px; /* 125% */
+}
+html body .cat_s-1 .filter .coustomer_reviews ul li {
+  margin-bottom: 16px;
+}
+html body .cat_s-1 .filter .coustomer_reviews ul li .custom-checkbox {
+  margin-right: 24px;
+  width: 24px;
+  height: 24px;
+  margin-bottom: 0;
+  vertical-align: top;
+  cursor: pointer;
+}
+html body .cat_s-1 .filter .coustomer_reviews ul li .custom-checkbox .checkmark {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  border-radius: 2px;
+  background-color: #c0afaf;
+}
+html body .cat_s-1 .filter .coustomer_reviews ul li .custom-checkbox input:checked + .checkmark {
+  background: url(../img/categories_page/checked.svg);
+}
+html body .cat_s-1 .filter .coustomer_reviews ul li .custom-checkbox input {
+  display: none;
+}
+html body .cat_s-1 .filter .coustomer_reviews ul li i {
+  display: inline-block;
+  color: #a18686;
+}
+html body .cat_s-1 .filter .coustomer_reviews ul li .not_soild {
+  color: #cbbcbc;
+}
+html body .cat_s-1 .filter .price_range {
+  margin-bottom: 91px;
+}
+html body .cat_s-1 .filter .price_range h3 {
+  color: #0e1020;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px; /* 125% */
+}
+html body .cat_s-1 .filter .price_range ul li {
+  margin-bottom: 16px;
+}
+html body .cat_s-1 .filter .price_range ul li .custom-checkbox {
+  margin-right: 24px;
+  width: 24px;
+  height: 24px;
+  margin-bottom: 0;
+  vertical-align: middle;
+  cursor: pointer;
+}
+html body .cat_s-1 .filter .price_range ul li .custom-checkbox .checkmark {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  border-radius: 2px;
+  background-color: #c0afaf;
+}
+html body .cat_s-1 .filter .price_range ul li .custom-checkbox input:checked + .checkmark {
+  background: url(../img/categories_page/checked.svg);
+}
+html body .cat_s-1 .filter .price_range ul li .custom-checkbox input {
+  display: none;
+}
+html body .cat_s-1 .filter .price_range ul li h6 {
+  display: inline-block;
+  vertical-align: middle;
+  color: #0e1020;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 166.667% */
+  margin-bottom: 0;
+}
+html body .cat_s-1 .filter .see_more {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  margin-bottom: 8px;
+}
+html body .cat_s-1 .filter .see_more h5 {
+  display: inline-block;
+  vertical-align: middle;
+  color: #a18686;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  margin-bottom: 0;
+}
+html body .cat_s-1 .filter .see_more svg {
+  vertical-align: middle;
+}
+html body .cat_s-1 .card_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+html body .cat_s-1 .card_wrapper .my_card {
+  margin-bottom: 16px;
+  border-radius: 8px;
+  border: 0.5px solid #0e1020;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-right: 20px;
+  background: #faf9f8;
+  width: 240px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+html body .cat_s-1 .card_wrapper .my_card a {
+  text-decoration: none;
+  z-index: 1;
+}
+html body .cat_s-1 .card_wrapper .my_card a .card_top {
+  border-radius: 4px 4px 0px 0px;
+  background: #e5e5e5;
+  position: relative;
+}
+html body .cat_s-1 .card_wrapper .my_card a .card_top img {
+  display: block;
+  width: 100%;
+}
+html body .cat_s-1 .card_wrapper .my_card a .card_top i {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+html body .cat_s-1 .card_wrapper .my_card .card_bottom {
+  padding: 12px;
+  padding-bottom: 0px;
+}
+html body .cat_s-1 .card_wrapper .my_card .card_bottom p {
+  margin-bottom: 16px;
+  color: #0e1020;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+}
+html body .cat_s-1 .card_wrapper .my_card .card_bottom .price {
+  margin-bottom: 16px;
+  color: #0e1020;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px; /* 100% */
+}
+html body .cat_s-1 .card_wrapper .my_card .card_bottom .rate {
+  margin-bottom: 24px;
+}
+html body .cat_s-1 .card_wrapper .my_card .card_bottom .rate h6 {
+  color: #0e1020;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 120% */
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+html body .cat_s-1 .card_wrapper .my_card .card_bottom .rate i {
+  display: inline-block;
+  color: #a18686;
+  vertical-align: middle;
+}
+html body .cat_s-1 .card_wrapper .my_card .card_bottom .rate .not_soild {
   color: #d5c9c9;
 }
 html body footer {
