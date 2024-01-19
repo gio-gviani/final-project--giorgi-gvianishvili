@@ -7,6 +7,7 @@
     margin-right: 20px;
     border-radius: 8px;
     border: 1px solid $Primary-5;
+    height: max-content;
     min-width: 400px;
     .filter_categories {
       margin-bottom: 56px;
@@ -250,6 +251,38 @@
             color: $Primary-4;
           }
         }
+      }
+    }
+    .change_page {
+      width: 100%;
+      background-color: #fff;
+      margin-top: 28px;
+      .pages_nums {
+        display: inline-block;
+        color: $Secondary_10;
+        font-family: Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 48px; /* 200% */
+        vertical-align: middle;
+
+        margin-right: 24px;
+
+        p {
+          margin: 0;
+        }
+      }
+      svg {
+        vertical-align: middle;
+      }
+      .selected {
+        color: $Primary-10;
+        font-family: Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 48px; /* 200% */
       }
     }
   }

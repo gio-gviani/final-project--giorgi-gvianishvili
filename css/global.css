@@ -1008,6 +1008,9 @@ html body .cat_s-1 .filter {
   margin-right: 20px;
   border-radius: 8px;
   border: 1px solid #cbbcbc;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   min-width: 400px;
 }
 html body .cat_s-1 .filter .filter_categories {
@@ -1248,6 +1251,36 @@ html body .cat_s-1 .card_wrapper .my_card .card_bottom .rate i {
 }
 html body .cat_s-1 .card_wrapper .my_card .card_bottom .rate .not_soild {
   color: #d5c9c9;
+}
+html body .cat_s-1 .card_wrapper .change_page {
+  width: 100%;
+  background-color: #fff;
+  margin-top: 28px;
+}
+html body .cat_s-1 .card_wrapper .change_page .pages_nums {
+  display: inline-block;
+  color: #C9C0B7;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 48px; /* 200% */
+  vertical-align: middle;
+  margin-right: 24px;
+}
+html body .cat_s-1 .card_wrapper .change_page .pages_nums p {
+  margin: 0;
+}
+html body .cat_s-1 .card_wrapper .change_page svg {
+  vertical-align: middle;
+}
+html body .cat_s-1 .card_wrapper .change_page .selected {
+  color: #967979;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 48px; /* 200% */
 }
 html body footer {
   margin-top: 104px;
