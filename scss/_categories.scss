@@ -1,7 +1,21 @@
+.filter_small {
+  display: none;
+  @include button3;
+  margin-top: 22px;
+  .shop_now {
+    width: 152px;
+  }
+
+  @media (max-width: 742px) {
+    display: block;
+  }
+}
 .cat_s-1 {
   display: flex;
   margin-top: 48px;
-  .filter {
+
+  .filter_big {
+
     padding-left: 42px;
     padding-top: 24px;
     margin-right: 20px;
@@ -9,6 +23,13 @@
     border: 1px solid $Primary-5;
     height: max-content;
     min-width: 400px;
+    @media (max-width: 742px) {
+      display: none;
+    }
+    @media (max-width: 1079px) {
+      min-width: 300px;
+      
+    }
     .filter_categories {
       margin-bottom: 56px;
       h3 {
@@ -178,6 +199,7 @@
   .card_wrapper {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 
     .my_card {
       margin-bottom: 16px;
@@ -188,6 +210,15 @@
       background: $Secondary_1;
       width: 240px;
       height: max-content;
+
+      @media (max-width: 1279px) {
+        width: 270px;
+      }
+      @media (max-width: 659px) {
+        width: 90%;
+        
+      }
+
       a {
         text-decoration: none;
         z-index: 1;
