@@ -1,0 +1,53 @@
+.s1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .s1_b {
+    width: max-content;
+    border-radius: 10px;
+    margin-top: 104px;
+
+    max-width: 400px;
+    width: 100%;
+    background-color: $Primary-3;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    h1 {
+      margin-bottom: 40px;
+      margin-top: 30px;
+    }
+    form {
+      .one_inp {
+        h6 {
+          color: $Gray_10;
+          font-family: Inter;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 24px; /* 120% */
+          margin-bottom: 10px;
+        }
+        input {
+          border-radius: 8px;
+          background: $Secondary_1;
+          border: none;
+          outline: none;
+          width: 270px;
+          height: 30px;
+          margin-bottom: 30px;
+        }
+      }
+      .submit_btn {
+        @include button2;
+        margin: 0 auto;
+        width: max-content;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

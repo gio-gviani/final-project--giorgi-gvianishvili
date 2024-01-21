@@ -15,7 +15,6 @@
   margin-top: 48px;
 
   .filter_big {
-
     padding-left: 42px;
     padding-top: 24px;
     margin-right: 20px;
@@ -28,7 +27,6 @@
     }
     @media (max-width: 1079px) {
       min-width: 300px;
-      
     }
     .filter_categories {
       margin-bottom: 56px;
@@ -216,7 +214,6 @@
       }
       @media (max-width: 659px) {
         width: 90%;
-        
       }
 
       a {
@@ -288,6 +285,9 @@
       width: 100%;
       background-color: #fff;
       margin-top: 28px;
+      @media (max-width: 424px) {
+          display: none;
+        }
       .pages_nums {
         display: inline-block;
         color: $Secondary_10;
@@ -299,6 +299,7 @@
         vertical-align: middle;
 
         margin-right: 24px;
+        
 
         p {
           margin: 0;

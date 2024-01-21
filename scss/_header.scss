@@ -97,7 +97,7 @@ header {
           input {
             width: 50%;
           }
-          input::placeholder { 
+          input::placeholder {
             font-size: 0px;
           }
         }
@@ -126,6 +126,13 @@ header {
         font-style: normal;
         font-weight: 500;
         line-height: 24px; /* 120% */
+      }
+      a:hover {
+        text-decoration: none;
+        color: $Secondary_6;
+      }
+      .selected {
+        color: $Secondary_10;
       }
     }
   }
